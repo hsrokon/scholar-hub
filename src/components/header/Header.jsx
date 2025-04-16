@@ -2,10 +2,11 @@
 
 const Header = () => {
     return (
-        <header className="flex justify-between items-center">
+        <header className="flex justify-between items-center my-2">
             <div className="w-16">
-                <img src="https://i.ibb.co.com/gLngNr2Q/logo-transparent.png" alt="logo" />
-                {/* https://i.ibb.co.com/gLngNr2Q/logo-transparent.png
+                <img src="https://i.ibb.co.com/KjjmM4Kz/logo-transparent-reduced-more.png" alt="logo" />
+                {/* https://i.ibb.co.com/KjjmM4Kz/logo-transparent-reduced-more.png //reduced
+                https://i.ibb.co.com/gLngNr2Q/logo-transparent.png
                 https://i.ibb.co.com/SXMnFKY0/logo-transparent-with.png */}
             </div>
             <div className="flex gap-4">
