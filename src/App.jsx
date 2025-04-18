@@ -1,6 +1,7 @@
 import { useState } from "react"
 import Banner from "./components/banner/Banner"
 import Header from "./components/header/Header"
+import Scholars from "./components/scholars/scholars";
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
     <main className="w-11/12 mx-auto">
       <Header coins={coins}></Header>
       <Banner handleCoins={handleCoins}></Banner>
+      <Scholars></Scholars>
     </main>
   )
 }

@@ -1,84 +1,110 @@
 [
-    {
-      "id": 1,
-      "fullName": "Mufti Ismail Menk",
-      "origin": "Zimbabwe",
-      "category": "Motivational, General Dawah",
-      "rating": 4.9,
-      "pricing": 1200,
-      "image": "https://i.ibb.co.com/JRLVkHkh/s1.webp"
-    },
-    {
-      "id": 2,
-      "fullName": "Dr. Zakir Naik",
-      "origin": "India",
-      "category": "Comparative Religion",
-      "rating": 4.8,
-      "pricing": 1500,
-      "image": "https://i.ibb.co.com/1JnjpwrQ/gulfnews-import-2016-10-27-1-16a081e7bbd-1919962-3727838135-16a081e7bbd-large.jpg"
-    },
-    {
-      "id": 3,
-      "fullName": "Sheikh Assim Al Hakeem",
-      "origin": "Saudi Arabia",
-      "category": "Fiqh, Q&A",
-      "rating": 4.7,
-      "pricing": 1000,
-      "image": "https://i.ibb.co.com/WvLzqqSY/hq720.jpg"
-    },
-    {
-      "id": 4,
-      "fullName": "Nouman Ali Khan",
-      "origin": "USA",
-      "category": "Quran Linguistics, Tafsir",
-      "rating": 4.9,
-      "pricing": 1300,
-      "image": "https://i.ibb.co.com/v6KPcJmf/s4.jpg"
-    },
-    {
-      "id": 5,
-      "fullName": "Omar Suleiman",
-      "origin": "USA",
-      "category": "Social Justice, Seerah",
-      "rating": 4.8,
-      "pricing": 1250,
-      "image": "https://i.ibb.co.com/XZkvYHjq/s5.png"
-    },
-    {
-        "id": 6,
-        "fullName": "Sheikh Tawfique Chowdhury",
-        "origin": "Australia",
-        "category": "Leadership, Islamic Finance",
-        "rating": 4.7,
-        "pricing": 1350,
-        "image": "https://i.ibb.co.com/MkcNJs63/s6.jpg"
-    },
-    {
-      "id": 7,
-      "fullName": "Sheikh Bilal Philips",
-      "origin": "Canada",
-      "category": "Islamic Studies, Online Education",
-      "rating": 4.5,
-      "pricing": 1100,
-      "image": "https://i.ibb.co.com/RGhp64C5/s7.jpg"
-    },
-    {
-      "id": 8,
-      "fullName": "Sheikh Mishary Alafasy",
-      "origin": "Kuwait",
-      "category": "Quran Recitation",
-      "rating": 4.9,
-      "pricing": 1700,
-      "image": "https://i.ibb.co.com/Kxh2NQGp/s8.png"
-    },
-    {
-        "id": 9,
-        "fullName": "Muhammad Hoblos",
-        "origin": "Australia",
-        "category": "Dawah, Motivation",
-        "rating": 4.6,
-        "pricing": 1000,
-        "image": "https://i.ibb.co.com/MyShVQhr/s9.png"
-    }      
-  ]
-  
+  {
+    "id": 1,
+    "fullName": "Mufti Ismail Menk",
+    "origin": "Zimbabwe",
+    "currentCountry": "Zimbabwe",
+    "category": "Motivational, General Dawah",
+    "pricing": 1200,
+    "image": "https://i.ibb.co.com/JRLVkHkh/s1.webp",
+    "description": "Renowned for his uplifting and relatable Islamic talks delivered worldwide.",
+    "languages": ["English", "Arabic"],
+    "availability": "Available for international events"
+  },
+  {
+    "id": 2,
+    "fullName": "Dr. Zakir Naik",
+    "origin": "India",
+    "currentCountry": "Malaysia",
+    "category": "Comparative Religion",
+    "pricing": 1500,
+    "image": "https://i.ibb.co.com/1JnjpwrQ/gulfnews-import-2016-10-27-1-16a081e7bbd-1919962-3727838135-16a081e7bbd-large.jpg",
+    "description": "Founder of Peace TV, specializes in comparative religion and debates.",
+    "languages": ["English", "Urdu", "Arabic"],
+    "availability": "Available upon request"
+  },
+  {
+    "id": 3,
+    "fullName": "Sheikh Assim Al Hakeem",
+    "origin": "Saudi Arabia",
+    "currentCountry": "Saudi Arabia",
+    "category": "Fiqh, Q&A",
+    "pricing": 1000,
+    "image": "https://i.ibb.co.com/WvLzqqSY/hq720.jpg",
+    "description": "Popular for his straightforward answers on Islamic jurisprudence.",
+    "languages": ["English", "Arabic"],
+    "availability": "Available online & in-person"
+  },
+  {
+    "id": 4,
+    "fullName": "Nouman Ali Khan",
+    "origin": "USA",
+    "currentCountry": "USA",
+    "category": "Quran Linguistics, Tafsir",
+    "pricing": 1300,
+    "image": "https://i.ibb.co.com/v6KPcJmf/s4.jpg",
+    "description": "Founder of Bayyinah Institute, passionate about Quranic language and literacy.",
+    "languages": ["English", "Urdu", "Arabic"],
+    "availability": "Available selectively"
+  },
+  {
+    "id": 5,
+    "fullName": "Omar Suleiman",
+    "origin": "USA",
+    "currentCountry": "USA",
+    "category": "Social Justice, Seerah",
+    "pricing": 1250,
+    "image": "https://i.ibb.co.com/XZkvYHjq/s5.png",
+    "description": "Known for connecting Islamic principles with modern-day social justice.",
+    "languages": ["English", "Arabic"],
+    "availability": "Available in North America"
+  },
+  {
+    "id": 6,
+    "fullName": "Sheikh Tawfique Chowdhury",
+    "origin": "Australia",
+    "currentCountry": "Australia",
+    "category": "Leadership, Islamic Finance",
+    "pricing": 1000,
+    "image": "https://i.ibb.co.com/MkcNJs63/s6.jpg",
+    "description": "CEO of Mercy Mission, known for leadership and community development efforts.",
+    "languages": ["English", "Arabic"],
+    "availability": "Available upon invitation"
+  },
+  {
+    "id": 7,
+    "fullName": "Sheikh Bilal Philips",
+    "origin": "Canada",
+    "currentCountry": "Qatar",
+    "category": "Islamic Studies, Online Education",
+    "pricing": 1100,
+    "image": "https://i.ibb.co.com/RGhp64C5/s7.jpg",
+    "description": "Founder of IOU (Islamic Online University), active in digital Islamic education.",
+    "languages": ["English", "Arabic"],
+    "availability": "Primarily online"
+  },
+  {
+    "id": 8,
+    "fullName": "Sheikh Mishary Alafasy",
+    "origin": "Kuwait",
+    "currentCountry": "Kuwait",
+    "category": "Quran Recitation",
+    "pricing": 1700,
+    "image": "https://i.ibb.co.com/Kxh2NQGp/s8.png",
+    "description": "Famous Qari and Nasheed artist, known for soulful recitations of the Quran.",
+    "languages": ["Arabic"],
+    "availability": "Available for special religious events"
+  },
+  {
+    "id": 9,
+    "fullName": "Muhammad Hoblos",
+    "origin": "Australia",
+    "currentCountry": "Australia",
+    "category": "Dawah, Motivation",
+    "pricing": 1000,
+    "image": "https://i.ibb.co.com/MyShVQhr/s9.png",
+    "description": "Powerful motivational speaker with a focus on street Dawah and youth reform.",
+    "languages": ["English", "Arabic"],
+    "availability": "Available locally and abroad"
+  }
+]

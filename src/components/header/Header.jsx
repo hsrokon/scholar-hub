@@ -17,7 +17,7 @@ const Header = ({coins}) => {
                     <ul className="hidden lg:block"><a href="">Events</a></ul>
                     <ul className="hidden lg:block"><a href="">Schedules</a></ul> 
                 </li>
-                <button className="border-2 border-blue-800 px-4 rounded-md flex items-center gap-1"><CiBadgeDollar/>{coins}</button>
+                <button className="border-2 border-sky-950 hover:bg-sky-950 hover:text-white hover:border-amber-300 px-4 rounded-md flex items-center gap-1"><CiBadgeDollar/>{coins}</button>
             </div>
             
         </header>
