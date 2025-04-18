@@ -1,6 +1,7 @@
+import { CiBadgeDollar } from "react-icons/ci";
 
 
-const Header = () => {
+const Header = ({coins}) => {
     return (
         <header className="flex justify-between items-center my-2">
             <div className="w-16">
@@ -13,10 +14,10 @@ const Header = () => {
                 <li className="flex gap-4">
                     <ul><a href="">Home</a></ul>
                     <ul><a href="">Available</a></ul>     
-                    <ul><a href="">Events</a></ul>
-                    <ul><a href="">Schedules</a></ul> 
+                    <ul className="hidden lg:block"><a href="">Events</a></ul>
+                    <ul className="hidden lg:block"><a href="">Schedules</a></ul> 
                 </li>
-                <button className="border-2 border-blue-800 px-1 rounded-md">Coin</button>
+                <button className="border-2 border-blue-800 px-4 rounded-md flex items-center gap-1"><CiBadgeDollar/>{coins}</button>
             </div>
             
         </header>
