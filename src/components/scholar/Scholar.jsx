@@ -1,6 +1,6 @@
 
 
-const Scholar = ({scholar}) => {
+const Scholar = ({scholar, handleSelect}) => {
     const {fullName, origin, currentCountry, category, description, languages, availability, pricing, image} = scholar;
 
     return (
@@ -38,7 +38,7 @@ const Scholar = ({scholar}) => {
                 
                 <div className="card-actions justify-end">
                 <button className="badge badge-outline border-2 border-sky-950 hover:bg-sky-950 hover:text-white hover:border-amber-300 px-2 py-3">Pricing: {pricing}</button>
-                <button className="badge badge-outline border-2 border-sky-950 hover:bg-sky-950 hover:text-white hover:border-amber-300 px-2 py-3">Select</button>
+                <button className="badge badge-outline border-2 border-sky-950 hover:bg-sky-950 hover:text-white hover:border-amber-300 px-2 py-3" onClick={()=>handleSelect(scholar)}>Select</button>
                 </div>
             </div>
         </div>
