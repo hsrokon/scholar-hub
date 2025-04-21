@@ -8,14 +8,14 @@ function App() {
   const [coins, setCoins] = useState(0);
 
   const handleCoins = coin => {
-    setCoins(coin);
+    setCoins(coins+coin);
   }
 
   return (
     <main className="w-11/12 mx-auto">
       <Header coins={coins}></Header>
       <Banner handleCoins={handleCoins}></Banner>
-      <Scholars></Scholars>
+      <Scholars coins={coins}></Scholars>
     </main>
   )
 }

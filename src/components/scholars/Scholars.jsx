@@ -1,18 +1,29 @@
 import { useEffect, useState } from "react";
 import Scholar from "../scholar/Scholar";
-import Selected from "../selectedScholars/SelectedScholars";
 import SelectedScholars from "../selectedScholars/SelectedScholars";
 
-const Scholars = () => {
+const Scholars = ({coins}) => {
 
     const [scholars, setScholars] = useState([]);
-
     const [activeTab, setActiveTab] = useState('available');
-
     const [selected, setSelected] = useState([]);
 
     const handleSelect = scholar => {
+        if (coins<scholar.pricing) {
+            alert('Not enough money!!');
+            return;
+        }
+
+        if(selected.length===6){
+            alert(`Can't select more than 6!`);
+            return;
+        }
         setSelected([...selected, scholar]);
+    }
+
+    const handleDelete = id => {
+        const newSelected = selected.filter(sch => sch.id !==id);
+        setSelected(newSelected);
     }
      
     useEffect(()=>{
@@ -28,16 +39,18 @@ const Scholars = () => {
                 </h2>  
                 <div>
                     <button 
-                    className={`border-2 px-2 py-1 rounded-l-lg  ${activeTab === 'available' ? "bg-sky-950 text-white border-amber-300" : "border-sky-950"} `} 
+                    className={`border-2 px-2 py-1 rounded-l-lg  
+                        ${activeTab === 'available' ? "bg-sky-950 text-white border-amber-300" : "border-sky-950"} `} 
                     onClick={()=>setActiveTab('available')}>Available</button>
                     <button 
-                    className={`border-2 px-2 py-1 rounded-r-lg  ${activeTab === 'selected' ? "bg-sky-950 text-white border-amber-300" : "border-sky-950"}`}
-                    onClick={()=>setActiveTab('selected')}>Selected</button>
+                    className={`border-2 px-2 py-1 rounded-r-lg  
+                        ${activeTab === 'selected' ? "bg-sky-950 text-white border-amber-300" : "border-sky-950"}`}
+                    onClick={()=>setActiveTab('selected')}>Selected ({selected.length})</button>
                 </div>
             </div>
 
             {activeTab === 'available' ? 
-            (<div className="grid lg:grid-cols-3 gap-6 lg:gap-12">
+            (<div className="w-fit mx-auto grid lg:grid-cols-3 gap-6 lg:gap-x-20 lg:gap-y-16">
                 {
                     scholars.map(scholar => <Scholar
                         key={scholar.id}
@@ -46,6 +59,8 @@ const Scholars = () => {
                 }
             </div>) : <SelectedScholars
                         selected={selected}
+                        setActiveTab={setActiveTab}
+                        handleDelete={handleDelete}
                         ></SelectedScholars>}
             
         </div>

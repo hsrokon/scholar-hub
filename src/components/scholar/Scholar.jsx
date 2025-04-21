@@ -37,8 +37,8 @@ const Scholar = ({scholar, handleSelect}) => {
                 </div>
                 
                 <div className="card-actions justify-end">
-                <button className="badge badge-outline border-2 border-sky-950 hover:bg-sky-950 hover:text-white hover:border-amber-300 px-2 py-3">Pricing: {pricing}</button>
-                <button className="badge badge-outline border-2 border-sky-950 hover:bg-sky-950 hover:text-white hover:border-amber-300 px-2 py-3" onClick={()=>handleSelect(scholar)}>Select</button>
+                    <button className="border-2 border-amber-500 bg-sky-950 text-white px-2 py-0.5 rounded-xl">Pricing: {pricing}</button>
+                    <button className="badge badge-outline border-2 border-sky-950 hover:bg-sky-950 hover:text-white hover:border-amber-300 px-2 py-3" onClick={()=>handleSelect(scholar)}>Select</button>
                 </div>
             </div>
         </div>

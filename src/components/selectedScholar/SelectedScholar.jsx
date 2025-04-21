@@ -1,8 +1,8 @@
 import { MdDeleteForever } from "react-icons/md";
 
-const SelectedScholar = ({selectedScholar}) => {
+const SelectedScholar = ({selectedScholar, handleDelete}) => {
 
-const {fullName, image, category} = selectedScholar;
+const {id, fullName, image, category} = selectedScholar;
 
     return (
         <div className="border-2 border-amber-500 flex justify-between items-center px-4 py-2 rounded-2xl">
@@ -15,7 +15,7 @@ const {fullName, image, category} = selectedScholar;
                     <p>{category}</p>
                 </div>
             </div>
-            <button className="cursor-pointer"><MdDeleteForever className="text-red-600 size-6" /></button>
+            <button className="cursor-pointer" onClick={()=>handleDelete(id)}><MdDeleteForever className="text-red-600 size-6" /></button>
         </div>
     );
 };
