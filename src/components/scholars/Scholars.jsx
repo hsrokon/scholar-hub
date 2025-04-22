@@ -1,29 +1,91 @@
 import { useEffect, useState } from "react";
 import Scholar from "../scholar/Scholar";
 import SelectedScholars from "../selectedScholars/SelectedScholars";
+import { Bounce, toast } from 'react-toastify';
 
-const Scholars = ({coins}) => {
+const Scholars = ({coins, setCoins}) => {
 
     const [scholars, setScholars] = useState([]);
     const [activeTab, setActiveTab] = useState('available');
     const [selected, setSelected] = useState([]);
 
     const handleSelect = scholar => {
+        const alreadySelected = selected.find(sch => sch.id ===scholar.id )
         if (coins<scholar.pricing) {
-            alert('Not enough money!!');
+            toast.error('Not enough credit!', {
+                position: "top-center",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: false,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "light",
+                transition: Bounce,
+                });
             return;
+        } else if(!alreadySelected) {
+            setCoins(coins-scholar.pricing)
         }
 
         if(selected.length===6){
-            alert(`Can't select more than 6!`);
+            toast.info(`Can't select more than 6!`, {
+                position: "top-center",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: false,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "light",
+                transition: Bounce,
+                });
             return;
         }
+
+        if (alreadySelected) {
+            toast.info(`Scholar already selected!`, {
+                position: "top-center",
+                autoClose: 5000,
+                hideProgressBar: false,
+                closeOnClick: false,
+                pauseOnHover: true,
+                draggable: true,
+                progress: undefined,
+                theme: "light",
+                transition: Bounce,
+                });
+            return;
+        }
+
         setSelected([...selected, scholar]);
+        toast.success('Scholar selected!', {
+            position: "top-center",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: false,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "light",
+            transition: Bounce,
+            });
     }
 
     const handleDelete = id => {
         const newSelected = selected.filter(sch => sch.id !==id);
         setSelected(newSelected);
+        toast.warn('Scholar removed!', {
+            position: "top-center",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: false,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "light",
+            transition: Bounce,
+            });
     }
      
     useEffect(()=>{
@@ -63,7 +125,6 @@ const Scholars = ({coins}) => {
                         setActiveTab={setActiveTab}
                         handleDelete={handleDelete}
                         ></SelectedScholars>}
-            
         </div>
     );
 };
