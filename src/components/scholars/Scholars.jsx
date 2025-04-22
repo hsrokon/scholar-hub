@@ -33,7 +33,8 @@ const Scholars = ({coins}) => {
     },[])
     return (
         <div className="mt-20 lg:my-10">
-            <div className="flex flex-col gap-1.5 lg:gap-0 lg:flex-row items-center justify-between my-8">
+            <div className="flex flex-col gap-1 lg:gap-0 lg:flex-row items-center justify-between my-8 
+            sticky top-0 z-50 bg-white/70 backdrop-blur-md shadow-sm rounded-lg px-4 py-2.5 md:py-4">
                 <h2 className="text-lg lg:text-2xl font-bold">
                     {activeTab==='available'? `Available scholars : (${scholars.length})` : `Selected scholars: (${selected.length}/6)`} 
                 </h2>  
