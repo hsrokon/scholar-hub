@@ -12,10 +12,10 @@ const Header = ({coins}) => {
             </div>
             <div className="flex gap-4">
                 <li className="flex gap-4">
-                    <ul><a href="">Home</a></ul>
-                    <ul><a href="">Available</a></ul>     
-                    <ul className="hidden lg:block"><a href="">Events</a></ul>
-                    <ul className="hidden lg:block"><a href="">Schedules</a></ul> 
+                    <ul><a href="#">Home</a></ul>
+                    <ul><a href="#">Available</a></ul>     
+                    <ul className="hidden lg:block"><a href="#">Events</a></ul>
+                    <ul className="hidden lg:block"><a href="#">Schedules</a></ul> 
                 </li>
                 <button className="border-2 border-sky-950 hover:bg-sky-950 hover:text-white hover:border-amber-300 px-4 rounded-md flex items-center gap-1"><CiBadgeDollar/>{coins}</button>
             </div>

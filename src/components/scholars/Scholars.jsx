@@ -50,7 +50,7 @@ const Scholars = ({coins}) => {
             </div>
 
             {activeTab === 'available' ? 
-            (<div className="w-fit mx-auto grid lg:grid-cols-3 gap-6 lg:gap-x-20 lg:gap-y-16">
+            (<div className="w-fit mx-auto grid lg:grid-cols-2 xl:grid-cols-3 gap-6 lg:gap-x-20 lg:gap-y-16">
                 {
                     scholars.map(scholar => <Scholar
                         key={scholar.id}

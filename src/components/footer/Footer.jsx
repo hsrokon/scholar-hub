@@ -3,12 +3,12 @@ import Newsletter from "./Newsletter";
 
 const Footer = () => {
     return (
-        <div className="bg-sky-950 mt-40 relative">
+        <div className="bg-sky-950 mt-36 md:mt-40 relative">
             <div className="absolute left-1/2 transform -translate-y-1/2 -translate-x-1/2
-            p-3 border-2 border-amber-500 rounded-3xl">
+            p-1 md:p-3 border-2 border-amber-500 rounded-3xl">
                 <Newsletter></Newsletter>
             </div>
-            <div className=" w-11/12 mx-auto flex justify-between pt-40 pb-6 text-slate-300">
+            <div className=" w-11/12 mx-auto flex justify-between pt-28 md:pt-40 pb-6 text-slate-300 text-sm md:text-base">
                 <div className="w-1/3 flex flex-col gap-2">
                     <h4 className="text-slate-200 font-semibold">About Us</h4>
                     <p className="hover:text-slate-200">We help you to discover and invite renowned Islamic scholars for conferences, lectures, and events worldwide.</p>
@@ -29,7 +29,7 @@ const Footer = () => {
                 </div>
             </div>
             <hr className="text-slate-500"/>
-            <p className="text-slate-400 text-center py-4">&#64;2025 Scholar Hub All Right Reserved.</p>
+            <p className="text-slate-400 text-center py-4 text-sm md:text-base">&#64;2025 Scholar Hub All Right Reserved.</p>
         </div>
     );
 };
