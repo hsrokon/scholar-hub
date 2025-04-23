@@ -3,7 +3,8 @@ import { CiBadgeDollar } from "react-icons/ci";
 
 const Header = ({coins}) => {
     return (
-        <header className="flex justify-between items-center my-2">
+        <header className="flex justify-between items-center my-2
+        sticky top-0 z-50 bg-white/70 backdrop-blur-md rounded-lg px-4 py-2.5 md:py-4">
             <div className="w-16">
                 <img src="https://i.ibb.co.com/KjjmM4Kz/logo-transparent-reduced-more.png" alt="logo" />
                 {/* https://i.ibb.co.com/KjjmM4Kz/logo-transparent-reduced-more.png //reduced

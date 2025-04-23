@@ -93,24 +93,45 @@ const Scholars = ({coins, setCoins}) => {
         .then(res => res.json())
         .then(data =>setScholars(data))
     },[])
+
+    const [showSticky, setShowSticky] = useState(false);
+
+    useEffect(() => {
+        const mediaQuery = window.matchMedia("(max-width: 639px)");
+        const isMobile = mediaQuery.matches;
+        const triggerY = isMobile ? 200 : 600;// how far down before buttons become fixed
+
+    const handleScroll = () => {
+
+        const scrollTop = window.scrollY;
+        setShowSticky(scrollTop > triggerY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
+
+
     return (
         <div className="mt-20 lg:my-10">
-            <div className="flex flex-col gap-1 lg:gap-0 lg:flex-row items-center justify-between my-8 
-            sticky top-0 z-50 bg-white/70 backdrop-blur-md shadow-sm rounded-lg px-4 py-2.5 md:py-4">
+            <div className="flex flex-col gap-1 lg:gap-0 lg:flex-row items-center justify-between relative my-8 ">
                 <h2 className="text-lg lg:text-2xl font-bold">
                     {activeTab==='available'? `Available scholars : (${scholars.length})` : `Selected scholars: (${selected.length}/6)`} 
                 </h2>  
-                <div>
+                <div className={`transition-all duration-300 ease-in-out
+                    ${showSticky ? 'fixed top-28 right-4 z-50 bg-white/90 backdrop-blur-md shadow-lg rounded-lg px-1 md:px-4 py-1 md:py-2.5' : 'relative'}`}>
+                {/*  */}
                     <button 
-                    className={`border-2 px-2 py-1 rounded-l-lg  
+                    className={`border-2 px-1.5 md:px-2 py-1 rounded-l-lg text-sm 
                         ${activeTab === 'available' ? "bg-sky-950 text-white border-amber-300" : "border-sky-950"} `} 
                     onClick={()=>setActiveTab('available')}>Available</button>
                     <button 
-                    className={`border-2 px-2 py-1 rounded-r-lg  
+                    className={`border-2 px-1.5 md:px-2 py-1 rounded-r-lg text-sm
                         ${activeTab === 'selected' ? "bg-sky-950 text-white border-amber-300" : "border-sky-950"}`}
                     onClick={()=>setActiveTab('selected')}>Selected ({selected.length})</button>
                 </div>
             </div>
+                
 
             {activeTab === 'available' ? 
             (<div className="w-fit mx-auto grid lg:grid-cols-2 xl:grid-cols-3 gap-6 lg:gap-x-20 lg:gap-y-16">
