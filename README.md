@@ -1,4 +1,4 @@
-# Scholar Hub 🕌
+# Scholar Hub ![Scholar Hub Logo](https://i.ibb.co.com/KjjmM4Kz/logo-transparent-reduced-more.png)
 
 **Connecting Islamic scholars with the world**
 
@@ -22,7 +22,7 @@ Scholar Hub helps you discover and invite renowned Islamic scholars for conferen
 ## 📸 Screenshots
 
 ### Home Page
-![Scholar Hub Home]((https://i.ibb.co.com/FbpzSChL/Screenshot-2025-04-23-225218.png))
+![Scholar Hub Home](https://i.ibb.co.com/FbpzSChL/Screenshot-2025-04-23-225218.png)
 
 ### Available Scholars View
 ![Available Scholars](https://i.ibb.co.com/9mfC2y5M/Screenshot-2025-04-23-225408.png)
