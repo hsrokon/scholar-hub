@@ -1,4 +1,4 @@
-# Scholar Hub <img src="https://i.ibb.co.com/KjjmM4Kz/logo-transparent-reduced-more.png" alt="Scholar Hub Logo" width="45"/>
+# Scholar Hub <img src="https://i.ibb.co.com/SXMnFKY0/logo-transparent-with.png" alt="Scholar Hub Logo" width="45"/>
 
 
 **Connecting Islamic scholars with the world**
