@@ -71,11 +71,19 @@ Each scholar includes:
 
 ---
 
-## 🧕🏽 Islamic Value Integration
+## 🕌 Islamic Value Integration 
+
 
 - **Respectful Language:** We use the term “credits” instead of terms like “coins” to maintain Islamic appropriateness.
 - **Authenticity in Profiles:** Sample scholar bios are derived from publicly known figures, representing a wide range of Islamic knowledge — from Fiqh to Seerah to Youth Dawah.
 - **Clarity and Modesty:** The UI and content uphold values of clarity, modesty, and accessibility for a global Muslim audience.
+
+---
+# 📦 Deployment
+
+This project is deployed using [Surge](https://surge.sh).
+
+🔗 **Live Demo:** [scholar-hub.surge.sh](http://scholar-hub.surge.sh)
 
 ---
 

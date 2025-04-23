@@ -24,7 +24,7 @@ const Footer = () => {
                 </div>
                 <div className="w-1/3 flex flex-col gap-2">
                     <h4 className="text-slate-200 font-semibold">Visit site developer</h4>
-                    <a className="hover:text-slate-200" href="hsrokon.com">HS Rokon</a>
+                    <a className="hover:text-slate-200" href="https://www.hsrokon.com/" target="_blank">HS Rokon</a>
                     <p className="hover:text-slate-200">- Discover the awesome projects and creative work by the developer behind this site.</p>
                 </div>
             </div>
